@@ -15,7 +15,7 @@ public class App {
             }
         }
         System.out.println("Total marks is: "+sum);
-        int average=sum/(marks.length);
+        double average=sum/(double)(marks.length);
         System.out.println("The average marks obtained is: "+average);
         System.out.println("The minimum marks he obtained is: "+min);
         System.out.println("The maximum marks he obtained is: "+max);
