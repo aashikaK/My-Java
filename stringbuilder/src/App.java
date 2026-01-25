@@ -16,5 +16,8 @@ public class App {
 
         sb.insert(3,"Miss.");
         System.out.println(sb);
+
+        sb.reverse();
+        System.out.println(sb);
     }
 }
