@@ -11,7 +11,7 @@ public class App {
         sb.append(" Friend");
         System.out.println(sb);
 
-        sb.delete(10,1);
+        sb.delete(10,17);
         System.out.println(sb);
 
         sb.insert(3,"Miss.");
