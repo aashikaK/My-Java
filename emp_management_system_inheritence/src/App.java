@@ -27,6 +27,7 @@ class FullTimeEmp extends Employee{
         this.bonus=bonus;
     }
     public void displayInfo(){
+        super.displayInfo();
         double totalSalary= salary+bonus;
         System.out.println("The total salary of full time worker is: "+totalSalary);
     }
@@ -40,6 +41,7 @@ class PartTimeEmp extends Employee{
         this.workHours=workHours;
     }
     public void displayInfo(){
+        super.displayInfo();
         double totalSalary= workHours*ratePerHr;
         System.out.println("The total salary of part time worker is: "+totalSalary);
     }
