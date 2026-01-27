@@ -1,11 +1,15 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        Car c= new Car();
-        c.start();
-        c.stop();
-        Bike b= new Bike();
-        b.start();
-        b.stop();
+        // Car c= new Car();   Or 
+        Vehicle v; // reference of abstract class
+        v= new Car();
+        v.start();
+        v.stop();
+
+        v= new Bike();
+        // Bike b= new Bike();
+        v.start();
+        v.stop();
     }
 }
 
