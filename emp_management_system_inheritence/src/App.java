@@ -17,7 +17,7 @@ class Employee{
         this.salary=salary;
     }
     public void displayInfo(){
-        System.out.println("The name of employee with emp id: "+eId+" is: "+eName+" and salary is:"+salary);
+        System.out.println("The name of employee with emp id: "+eId+" is: "+eName+" and salary is: "+salary);
     }
 }
 class FullTimeEmp extends Employee{
