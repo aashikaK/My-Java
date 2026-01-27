@@ -1,6 +1,6 @@
 public class App {
     public static void main(String[] args) throws Exception {
-       FullTimeEmp f=new FullTimeEmp(1, "Aashika Khatiwada", 10000000, 5000000);
+       FullTimeEmp f=new FullTimeEmp(1, "Aashika Khatiwada", 100000, 5000);
        f.displayInfo();
        PartTimeEmp p= new PartTimeEmp(2,"Lisa Thapa",1500,3);
        p.displayInfo();
@@ -17,7 +17,7 @@ class Employee{
         this.salary=salary;
     }
     public void displayInfo(){
-        System.out.println("The name of employee with emp id: "+eId+" is: "+eName+" and salary is:"+salary);
+        System.out.println("The name of employee with emp id: "+eId+" is: "+eName+" and salary is:"+salary+"\n");
     }
 }
 class FullTimeEmp extends Employee{
