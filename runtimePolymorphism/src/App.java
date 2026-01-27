@@ -8,6 +8,12 @@ public class App {
 
 class Shape{
     void draw(){
-        sou
+        System.out.println("Shape");
+    }
+}
+class Circle extends Shape{
+    void draw(){
+        super.draw();
+        System.out.println("Circle");
     }
 }
