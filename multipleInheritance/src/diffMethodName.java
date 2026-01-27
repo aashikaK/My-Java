@@ -2,6 +2,7 @@ public class diffMethodName {
     public static void main(String[] args) throws Exception {
        Multiple obj= new Multiple();
        obj.show();
+       obj.display();
     }
 }
 interface A{
@@ -11,11 +12,11 @@ interface B{
     void display(); 
 }
 class Multiple implements A,B{
-    public void show()// method of classes are defauy by default so write public  while implementing interfae
+    public void show()// Methods in a class are package-private by default so write public  while implementing interfae
     {
         System.out.println("Interface A");
     }
-    public void display()// method of classes are defauy by default so write public  while implementing interfae
+    public void display()// Methods in a class are package-private by defaultt so write public  while implementing interfae
     {
         System.out.println("Interface B");
     }
