@@ -1,6 +1,9 @@
 public class App {
     public static void main(String[] args) throws Exception {
-       
+       FullTimeEmp f=new FullTimeEmp(1, "Aashika Khatiwada", 10000000, 5000000);
+       f.displayInfo();
+       PartTimeEmp p= new PartTimeEmp(2,"Lisa Thapa",1500,3);
+       p.displayInfo();
     }
 }
 class Employee{
@@ -31,8 +34,8 @@ class FullTimeEmp extends Employee{
 class PartTimeEmp extends Employee{
     int workHours;
     double ratePerHr;
-    PartTimeEmp(int eId,String eName,double salary,double ratePerHr,int workHours){
-        super(eName, eId, salary);
+    PartTimeEmp(int eId,String eName,double ratePerHr,int workHours){
+        super(eName, eId, 0);
         this.ratePerHr=ratePerHr;
         this.workHours=workHours;
     }
