@@ -17,7 +17,7 @@ class Employee{
         this.salary=salary;
     }
     public void displayInfo(){
-        System.out.println("The name of employee with emp id: "+eId+" is: "+eName+" and salary is:"+salary+"\n");
+        System.out.println("The name of employee with emp id: "+eId+" is: "+eName+" and salary is:"+salary);
     }
 }
 class FullTimeEmp extends Employee{
@@ -29,7 +29,7 @@ class FullTimeEmp extends Employee{
     public void displayInfo(){
         super.displayInfo();
         double totalSalary= salary+bonus;
-        System.out.println("The total salary of full time worker is: "+totalSalary);
+        System.out.println("The total salary of full time worker is: "+totalSalary+"\n");
     }
 }
 class PartTimeEmp extends Employee{
