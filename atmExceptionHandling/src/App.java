@@ -9,3 +9,15 @@ class InsufficientBalanceException extends RuntimeException{
         super(msg);
     }
 }
+class ATM {
+    int balance=10000;
+    void withdrawl(int amount) extends InsufficientBalanceException{
+
+        if (amount<=0){
+            throw new IllegalArgumentException();
+        }
+        if(amount>balance){
+            throw new InsufficientBalanceException("Insufficient Balance");
+        }
+    }
+}
