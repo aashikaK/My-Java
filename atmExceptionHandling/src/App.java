@@ -3,3 +3,9 @@ public class App {
         System.out.println("Hello, World!");
     }
 }
+
+class InsufficientBalanceException extends RuntimeException{
+    InsufficientBalanceException(String msg){
+        super(msg);
+    }
+}
